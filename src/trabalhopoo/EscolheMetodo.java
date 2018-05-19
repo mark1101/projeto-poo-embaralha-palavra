@@ -21,6 +21,8 @@ public class EscolheMetodo {
         EmbaralhaLista lista = new EmbaralhaLista();
         BaguncaPar bagunca = new BaguncaPar();
 
+        
+        
         if (num == 0) {
             System.out.println("111");
             inverte.Muda(palavra);
@@ -29,7 +31,7 @@ public class EscolheMetodo {
         if (num == 1) {
             System.out.println("2222");
             lista.Muda(palavra); //// 
-            System.out.println(lista.toString());
+            System.out.println(lista.getPalavra());
             
         }
         if (num == 2) {
