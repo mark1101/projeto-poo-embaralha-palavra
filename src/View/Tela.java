@@ -6,6 +6,8 @@
 package View;
 
 import Embaralha.BaguncaPar;
+import Embaralha.EmbaralhaLista;
+import Embaralha.Inverte;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -50,6 +52,11 @@ public class Tela extends javax.swing.JFrame {
         jTextField1.setBorder(null);
 
         jButtonInicia.setText("INICIAR");
+        jButtonInicia.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonIniciaActionPerformed(evt);
+            }
+        });
 
         jButtonTroca.setText("TROCAR PALAVRA");
 
@@ -155,9 +162,20 @@ public class Tela extends javax.swing.JFrame {
 
     }//GEN-LAST:event_jTextFieldEmbaralhadaActionPerformed
 
+    private void jButtonIniciaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonIniciaActionPerformed
+        String mostra = "";
+        
+            Inverte inverte = new Inverte();
+            EmbaralhaLista embaralha = new EmbaralhaLista();
+            BaguncaPar bagunca = new BaguncaPar();
+            
+        
+    }//GEN-LAST:event_jButtonIniciaActionPerformed
+
     /**
      * @param args the command line arguments
      */
+    public static int global;
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
@@ -200,4 +218,8 @@ public class Tela extends javax.swing.JFrame {
     private javax.swing.JTextField jTextFieldEmbaralhada;
     private javax.swing.JTextField jTextFieldTeste;
     // End of variables declaration//GEN-END:variables
+
+    public void Num(int num) {
+        global = num;
+    }
 }
