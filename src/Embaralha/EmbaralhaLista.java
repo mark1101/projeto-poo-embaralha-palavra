@@ -14,7 +14,7 @@ import trabalhopoo.Jogo;
 
 public class EmbaralhaLista implements Jogo {
 
-    char[] palavraa;
+    public static char[] palavraa;
 
     @Override
     public void Muda(String palavra) {

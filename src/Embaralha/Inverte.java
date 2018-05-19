@@ -10,7 +10,8 @@ import trabalhopoo.Jogo;
 
 public class Inverte implements Jogo {
 
-    String saida = "";
+    public  String saida = "";
+  
 
     public void Muda(String palavra) {
         for (int i = palavra.length() - 1; i >= 0; i--) {
@@ -19,6 +20,7 @@ public class Inverte implements Jogo {
         System.out.println(saida);
         System.out.println("inverte");
     }
+    
    
     public String getPalavra() {
         return saida;

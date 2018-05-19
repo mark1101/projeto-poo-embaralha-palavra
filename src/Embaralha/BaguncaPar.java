@@ -8,7 +8,7 @@ public class BaguncaPar implements Jogo {
     private String palavra;
     String palavraPronta = "";
     private char primeira;
-    String ok = "";
+    public String ok = "";
 
     public void Muda(String palavra) {
 
@@ -30,14 +30,14 @@ public class BaguncaPar implements Jogo {
             }
             i++;
         }
-        
+        System.out.println(palavraPronta);
         System.out.println("bagunca");
-
+        ok = palavraPronta;
     }
 
     
     public String getPalavra() {
-        return palavraPronta;
+        return ok;
     }
 
     

@@ -175,19 +175,19 @@ public class Tela extends javax.swing.JFrame {
             {
                 System.out.println("global = 0 ");
                 System.out.println(mostra);
-                this.jTextFieldEmbaralhada.setText(inverte.getPalavra());
+                this.jTextFieldEmbaralhada.setText(inverte.getPalavra().toString());
             }
             if (global == 1)
             {
                 System.out.println("global 1");
 
-                jTextFieldEmbaralhada.setText("cxcx");
+                jTextFieldEmbaralhada.setText(embaralha.getPalavra().toString());
             }
             if (global == 2)
             {
-                System.out.println("global 3");
+                System.out.println("global 2");
                 mostra = bagunca.getPalavra();
-                this.jTextFieldEmbaralhada.setText(mostra);
+                this.jTextFieldEmbaralhada.setText(bagunca.getPalavra().toString());
             }
         
     }//GEN-LAST:event_jButtonIniciaActionPerformed
