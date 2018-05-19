@@ -35,8 +35,8 @@ public class BaguncaPar implements Jogo {
 
     }
 
-    @Override
-    public String toString() {
+    
+    public String getPalavra() {
         return palavraPronta;
     }
 

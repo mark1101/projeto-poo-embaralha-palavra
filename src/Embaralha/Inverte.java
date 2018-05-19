@@ -19,8 +19,8 @@ public class Inverte implements Jogo {
         System.out.println(saida);
         System.out.println("inverte");
     }
-    @Override
-    public String toString() {
+   
+    public String getPalavra() {
         return saida;
     }
 

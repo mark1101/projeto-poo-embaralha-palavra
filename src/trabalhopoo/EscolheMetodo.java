@@ -29,7 +29,8 @@ public class EscolheMetodo {
         if (num == 0) {
             //System.out.println("111");
             inverte.Muda(palavra);
-           // System.out.println(inverte.toString());
+            
+            //System.out.println(inverte.toString());
         }
         if (num == 1) {
             //System.out.println("2222");
