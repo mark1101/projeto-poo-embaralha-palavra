@@ -12,10 +12,8 @@ import trabalhopoo.EscolheMetodo;
 public class Main {
 
     public static void main(String[] args) {
-        Tela tela = new Tela();
-        tela.setVisible(true);
         String palavra = ConjuntoPalavras.EscolhaPalavra(0);
-        Jogo jogo = EscolheMetodo.Escolhe(1);
+        Jogo jogo = EscolheMetodo.Escolhe(0);
         
         String novaPalavra = jogo.Muda(palavra);
         System.out.println(novaPalavra);
