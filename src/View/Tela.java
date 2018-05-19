@@ -50,6 +50,7 @@ public class Tela extends javax.swing.JFrame {
         jLabel3 = new javax.swing.JLabel();
         jTextFieldERROS = new javax.swing.JTextField();
         jTextFieldTENTATIVAS = new javax.swing.JTextField();
+        jButton1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -99,6 +100,13 @@ public class Tela extends javax.swing.JFrame {
         jTextFieldTENTATIVAS.setFont(new java.awt.Font("Verdana", 1, 11)); // NOI18N
         jTextFieldTENTATIVAS.setBorder(javax.swing.BorderFactory.createEtchedBorder(new java.awt.Color(0, 0, 0), null));
 
+        jButton1.setText("RESETAR");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+
         jDesktopPane1.setLayer(jButtonInicia, javax.swing.JLayeredPane.DEFAULT_LAYER);
         jDesktopPane1.setLayer(jButtonTroca, javax.swing.JLayeredPane.DEFAULT_LAYER);
         jDesktopPane1.setLayer(Embaralhada, javax.swing.JLayeredPane.DEFAULT_LAYER);
@@ -110,6 +118,7 @@ public class Tela extends javax.swing.JFrame {
         jDesktopPane1.setLayer(jLabel3, javax.swing.JLayeredPane.DEFAULT_LAYER);
         jDesktopPane1.setLayer(jTextFieldERROS, javax.swing.JLayeredPane.DEFAULT_LAYER);
         jDesktopPane1.setLayer(jTextFieldTENTATIVAS, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jDesktopPane1.setLayer(jButton1, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         javax.swing.GroupLayout jDesktopPane1Layout = new javax.swing.GroupLayout(jDesktopPane1);
         jDesktopPane1.setLayout(jDesktopPane1Layout);
@@ -118,15 +127,6 @@ public class Tela extends javax.swing.JFrame {
             .addGroup(jDesktopPane1Layout.createSequentialGroup()
                 .addGap(21, 21, 21)
                 .addGroup(jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jDesktopPane1Layout.createSequentialGroup()
-                        .addGroup(jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jButtonInicia)
-                            .addComponent(jButtonTroca))
-                        .addGap(77, 77, 77)
-                        .addGroup(jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jTextFieldTeste, javax.swing.GroupLayout.DEFAULT_SIZE, 273, Short.MAX_VALUE)
-                            .addComponent(Embaralhada))
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addGroup(jDesktopPane1Layout.createSequentialGroup()
                         .addComponent(jLabel2)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -141,11 +141,22 @@ public class Tela extends javax.swing.JFrame {
                                 .addComponent(jLabel3)
                                 .addGap(18, 18, 18)
                                 .addComponent(jTextFieldERROS, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addGap(53, 53, 53))))
+                        .addGap(53, 53, 53))
+                    .addGroup(jDesktopPane1Layout.createSequentialGroup()
+                        .addGroup(jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jButtonInicia)
+                            .addComponent(jButtonTroca))
+                        .addGap(77, 77, 77)
+                        .addGroup(jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(jTextFieldTeste, javax.swing.GroupLayout.DEFAULT_SIZE, 273, Short.MAX_VALUE)
+                            .addComponent(Embaralhada))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jButton1)
+                        .addGap(37, 37, 37))))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jDesktopPane1Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jButtonTeste)
-                .addGap(221, 221, 221))
+                .addGap(298, 298, 298))
         );
         jDesktopPane1Layout.setVerticalGroup(
             jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -155,7 +166,8 @@ public class Tela extends javax.swing.JFrame {
                     .addGroup(jDesktopPane1Layout.createSequentialGroup()
                         .addGroup(jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(Embaralhada, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jButtonInicia))
+                            .addComponent(jButtonInicia)
+                            .addComponent(jButton1))
                         .addGap(32, 32, 32)
                         .addComponent(jTextFieldTeste, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(jButtonTroca))
@@ -188,7 +200,7 @@ public class Tela extends javax.swing.JFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(199, 199, 199)
                 .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 208, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(213, Short.MAX_VALUE))
+                .addContainerGap(291, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -274,6 +286,11 @@ public class Tela extends javax.swing.JFrame {
         
     }//GEN-LAST:event_jButtonIniciaActionPerformed
 
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        
+        resetar();
+    }//GEN-LAST:event_jButton1ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -312,6 +329,7 @@ public class Tela extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JTextField Embaralhada;
+    private javax.swing.JButton jButton1;
     private javax.swing.JButton jButtonInicia;
     private javax.swing.JButton jButtonTeste;
     private javax.swing.JButton jButtonTroca;

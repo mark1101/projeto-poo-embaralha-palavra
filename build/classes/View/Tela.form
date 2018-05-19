@@ -42,7 +42,7 @@
               <Group type="102" attributes="0">
                   <EmptySpace min="-2" pref="199" max="-2" attributes="0"/>
                   <Component id="jTextField1" min="-2" pref="208" max="-2" attributes="0"/>
-                  <EmptySpace pref="213" max="32767" attributes="0"/>
+                  <EmptySpace pref="291" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -75,18 +75,6 @@
                       <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" attributes="0">
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="jButtonInicia" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jButtonTroca" alignment="0" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <EmptySpace min="-2" pref="77" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                  <Component id="jTextFieldTeste" pref="273" max="32767" attributes="0"/>
-                                  <Component id="Embaralhada" max="32767" attributes="0"/>
-                              </Group>
-                              <EmptySpace max="32767" attributes="0"/>
-                          </Group>
-                          <Group type="102" attributes="0">
                               <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
                               <Component id="jTextFieldTENTATIVAS" min="-2" pref="86" max="-2" attributes="0"/>
@@ -105,12 +93,26 @@
                               </Group>
                               <EmptySpace min="-2" pref="53" max="-2" attributes="0"/>
                           </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="jButtonInicia" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jButtonTroca" alignment="0" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="-2" pref="77" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                  <Component id="jTextFieldTeste" pref="273" max="32767" attributes="0"/>
+                                  <Component id="Embaralhada" max="32767" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="32767" attributes="0"/>
+                              <Component id="jButton1" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="37" max="-2" attributes="0"/>
+                          </Group>
                       </Group>
                   </Group>
                   <Group type="102" alignment="1" attributes="0">
                       <EmptySpace max="32767" attributes="0"/>
                       <Component id="jButtonTeste" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="221" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="298" max="-2" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -123,6 +125,7 @@
                               <Group type="103" groupAlignment="3" attributes="0">
                                   <Component id="Embaralhada" alignment="3" min="-2" pref="37" max="-2" attributes="0"/>
                                   <Component id="jButtonInicia" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jButton1" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
                               <Component id="jTextFieldTeste" min="-2" pref="46" max="-2" attributes="0"/>
@@ -258,6 +261,14 @@
                   </Border>
                 </Property>
               </Properties>
+            </Component>
+            <Component class="javax.swing.JButton" name="jButton1">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="RESETAR"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton1ActionPerformed"/>
+              </Events>
             </Component>
           </SubComponents>
         </Container>
