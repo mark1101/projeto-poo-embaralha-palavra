@@ -15,7 +15,8 @@ import trabalhopoo.Jogo;
 public class EmbaralhaLista implements Jogo {
 
     public static char[] palavraa;
-
+    String palavraNova = "";
+    
     @Override
     public void Muda(String palavra) {
 
@@ -27,22 +28,21 @@ public class EmbaralhaLista implements Jogo {
             lista.add(i, palavra.charAt(i));
         }
         Collections.shuffle(lista);
-        //System.out.println(lista.toString());
 
         char[] novaPalavra = new char[lista.size()];
 
         for (int i = 0; i < novaPalavra.length; i++) {
-            novaPalavra[i] = lista.get(i);
+            palavraNova += lista.get(i);
 
         }
-
-        palavraa = novaPalavra;
-        System.out.println(palavraa);
-        System.out.println("lista");
+        
+        
+        System.out.println(palavraNova);
+        System.out.println("lista ");
 
     }
-    public char[] getPalavra() {
-        return palavraa;
+    public String getPalavra() {
+        return palavraNova;
     }
 
    
