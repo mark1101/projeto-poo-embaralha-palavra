@@ -41,14 +41,19 @@ public class Tela extends javax.swing.JFrame {
         jDesktopPane1 = new javax.swing.JDesktopPane();
         jButtonInicia = new javax.swing.JButton();
         jButtonTroca = new javax.swing.JButton();
-        jTextFieldEmbaralhada = new javax.swing.JTextField();
+        Embaralhada = new javax.swing.JTextField();
         jTextFieldTeste = new javax.swing.JTextField();
         jButtonTeste = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
+        jTextFieldACERTOS = new javax.swing.JTextField();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jTextFieldERROS = new javax.swing.JTextField();
+        jTextFieldTENTATIVAS = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jTextField1.setEditable(false);
-        jTextField1.setBackground(new java.awt.Color(240, 240, 240));
         jTextField1.setBorder(null);
 
         jButtonInicia.setText("INICIAR");
@@ -60,10 +65,10 @@ public class Tela extends javax.swing.JFrame {
 
         jButtonTroca.setText("TROCAR PALAVRA");
 
-        jTextFieldEmbaralhada.setEditable(false);
-        jTextFieldEmbaralhada.addActionListener(new java.awt.event.ActionListener() {
+        Embaralhada.setEditable(false);
+        Embaralhada.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextFieldEmbaralhadaActionPerformed(evt);
+                EmbaralhadaActionPerformed(evt);
             }
         });
 
@@ -75,11 +80,36 @@ public class Tela extends javax.swing.JFrame {
 
         jButtonTeste.setText("TESTAR");
 
+        jLabel1.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel1.setForeground(new java.awt.Color(0, 0, 153));
+        jLabel1.setText("ACERTOS : ");
+
+        jTextFieldACERTOS.setFont(new java.awt.Font("Verdana", 1, 11)); // NOI18N
+        jTextFieldACERTOS.setBorder(javax.swing.BorderFactory.createEtchedBorder(new java.awt.Color(0, 204, 0), null));
+
+        jLabel2.setForeground(new java.awt.Color(0, 0, 153));
+        jLabel2.setText("TENTATIVAS : ");
+
+        jLabel3.setForeground(new java.awt.Color(0, 0, 153));
+        jLabel3.setText("ERROS :");
+
+        jTextFieldERROS.setFont(new java.awt.Font("Verdana", 1, 11)); // NOI18N
+        jTextFieldERROS.setBorder(javax.swing.BorderFactory.createEtchedBorder(new java.awt.Color(255, 0, 0), null));
+
+        jTextFieldTENTATIVAS.setFont(new java.awt.Font("Verdana", 1, 11)); // NOI18N
+        jTextFieldTENTATIVAS.setBorder(javax.swing.BorderFactory.createEtchedBorder(new java.awt.Color(0, 0, 0), null));
+
         jDesktopPane1.setLayer(jButtonInicia, javax.swing.JLayeredPane.DEFAULT_LAYER);
         jDesktopPane1.setLayer(jButtonTroca, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jDesktopPane1.setLayer(jTextFieldEmbaralhada, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jDesktopPane1.setLayer(Embaralhada, javax.swing.JLayeredPane.DEFAULT_LAYER);
         jDesktopPane1.setLayer(jTextFieldTeste, javax.swing.JLayeredPane.DEFAULT_LAYER);
         jDesktopPane1.setLayer(jButtonTeste, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jDesktopPane1.setLayer(jLabel1, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jDesktopPane1.setLayer(jTextFieldACERTOS, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jDesktopPane1.setLayer(jLabel2, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jDesktopPane1.setLayer(jLabel3, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jDesktopPane1.setLayer(jTextFieldERROS, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jDesktopPane1.setLayer(jTextFieldTENTATIVAS, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         javax.swing.GroupLayout jDesktopPane1Layout = new javax.swing.GroupLayout(jDesktopPane1);
         jDesktopPane1.setLayout(jDesktopPane1Layout);
@@ -88,55 +118,83 @@ public class Tela extends javax.swing.JFrame {
             .addGroup(jDesktopPane1Layout.createSequentialGroup()
                 .addGap(21, 21, 21)
                 .addGroup(jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jButtonInicia)
-                    .addComponent(jButtonTroca))
-                .addGap(77, 77, 77)
-                .addGroup(jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jTextFieldTeste, javax.swing.GroupLayout.DEFAULT_SIZE, 273, Short.MAX_VALUE)
-                    .addComponent(jTextFieldEmbaralhada))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(jDesktopPane1Layout.createSequentialGroup()
+                        .addGroup(jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jButtonInicia)
+                            .addComponent(jButtonTroca))
+                        .addGap(77, 77, 77)
+                        .addGroup(jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(jTextFieldTeste, javax.swing.GroupLayout.DEFAULT_SIZE, 273, Short.MAX_VALUE)
+                            .addComponent(Embaralhada))
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(jDesktopPane1Layout.createSequentialGroup()
+                        .addComponent(jLabel2)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jTextFieldTENTATIVAS, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGroup(jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(jDesktopPane1Layout.createSequentialGroup()
+                                .addComponent(jLabel1)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(jTextFieldACERTOS, javax.swing.GroupLayout.PREFERRED_SIZE, 53, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(jDesktopPane1Layout.createSequentialGroup()
+                                .addComponent(jLabel3)
+                                .addGap(18, 18, 18)
+                                .addComponent(jTextFieldERROS, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(53, 53, 53))))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jDesktopPane1Layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jButtonTeste)
-                .addGap(234, 234, 234))
+                .addGap(221, 221, 221))
         );
         jDesktopPane1Layout.setVerticalGroup(
             jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jDesktopPane1Layout.createSequentialGroup()
-                .addGroup(jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGap(29, 29, 29)
+                .addGroup(jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(jDesktopPane1Layout.createSequentialGroup()
+                        .addGroup(jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(Embaralhada, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jButtonInicia))
+                        .addGap(32, 32, 32)
+                        .addComponent(jTextFieldTeste, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jButtonTroca))
+                .addGroup(jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(jDesktopPane1Layout.createSequentialGroup()
+                        .addGap(73, 73, 73)
+                        .addGroup(jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel2)
+                            .addComponent(jTextFieldTENTATIVAS, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(jDesktopPane1Layout.createSequentialGroup()
+                        .addGap(18, 18, 18)
+                        .addComponent(jButtonTeste)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 20, Short.MAX_VALUE)
+                        .addGroup(jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jTextFieldACERTOS, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel1))
                         .addGap(26, 26, 26)
-                        .addComponent(jButtonInicia))
-                    .addGroup(jDesktopPane1Layout.createSequentialGroup()
-                        .addGap(37, 37, 37)
-                        .addComponent(jTextFieldEmbaralhada, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(35, 35, 35)
-                .addGroup(jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addGroup(jDesktopPane1Layout.createSequentialGroup()
-                        .addComponent(jButtonTroca)
-                        .addGap(81, 81, 81))
-                    .addGroup(jDesktopPane1Layout.createSequentialGroup()
-                        .addComponent(jTextFieldTeste)
-                        .addGap(66, 66, 66)))
-                .addComponent(jButtonTeste)
-                .addContainerGap(83, Short.MAX_VALUE))
+                        .addGroup(jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jTextFieldERROS, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel3))
+                        .addGap(35, 35, 35))))
         );
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jDesktopPane1)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(199, 199, 199)
                 .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 208, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(213, Short.MAX_VALUE))
-            .addComponent(jDesktopPane1)
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addComponent(jDesktopPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(157, 157, 157)
+                .addGap(97, 97, 97)
                 .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
@@ -159,35 +217,59 @@ public class Tela extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextFieldTesteActionPerformed
 
-    private void jTextFieldEmbaralhadaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextFieldEmbaralhadaActionPerformed
+    private void EmbaralhadaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_EmbaralhadaActionPerformed
 
-    }//GEN-LAST:event_jTextFieldEmbaralhadaActionPerformed
+    }//GEN-LAST:event_EmbaralhadaActionPerformed
 
+    public int acertos;
+    public int tentativas;
+    public int palavras;
+    public int vidas;
+    public int erros;
+    
+    public void resetar ()
+    {
+        acertos = 0;
+        tentativas = 0;
+        palavras = 0;
+        vidas = 0;
+        erros = 0;
+        jTextFieldACERTOS.setText("" + acertos);
+        jTextFieldERROS.setText("" + erros);
+        jTextFieldTENTATIVAS.setText("" + tentativas);
+    }
     private void jButtonIniciaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonIniciaActionPerformed
+       
         String mostra = "";
-        char[] lista;
+        
+       
+        resetar();
         
             Inverte inverte = new Inverte();
-            EmbaralhaLista embaralha = new EmbaralhaLista();
+            EmbaralhaLista lista = new EmbaralhaLista();
             BaguncaPar bagunca = new BaguncaPar();
             
             if(global == 0)
             {
                 System.out.println("global = 0 ");
-                System.out.println(mostra);
-                this.jTextFieldEmbaralhada.setText(inverte.getPalavra().toString());
+                mostra = inverte.getPalavra();
+                Embaralhada.setText("uiuiui");
+                Embaralhada.setText(mostra);
             }
             if (global == 1)
             {
-                System.out.println("global 1");
-
-                jTextFieldEmbaralhada.setText(embaralha.getPalavra().toString());
+                System.out.println("global = 1");
+                mostra = lista.getPalavra();
+                Embaralhada.setText("uiuiui");
+                Embaralhada.setText(mostra);
+                
             }
             if (global == 2)
             {
-                System.out.println("global 2");
+                System.out.println("global = 2");
                 mostra = bagunca.getPalavra();
-                this.jTextFieldEmbaralhada.setText(bagunca.getPalavra().toString());
+                Embaralhada.setText("uiuiui");
+                this.Embaralhada.setText(mostra);
             }
         
     }//GEN-LAST:event_jButtonIniciaActionPerformed
@@ -229,13 +311,19 @@ public class Tela extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JTextField Embaralhada;
     private javax.swing.JButton jButtonInicia;
     private javax.swing.JButton jButtonTeste;
     private javax.swing.JButton jButtonTroca;
     private javax.swing.JDesktopPane jDesktopPane1;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextFieldEmbaralhada;
+    private javax.swing.JTextField jTextFieldACERTOS;
+    private javax.swing.JTextField jTextFieldERROS;
+    private javax.swing.JTextField jTextFieldTENTATIVAS;
     private javax.swing.JTextField jTextFieldTeste;
     // End of variables declaration//GEN-END:variables
 
