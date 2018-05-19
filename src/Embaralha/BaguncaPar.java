@@ -31,15 +31,13 @@ public class BaguncaPar implements Jogo {
             i++;
         }
         
-        ok = palavraPronta;
-        System.out.println(ok);
         System.out.println("bagunca");
 
     }
 
     @Override
     public String toString() {
-        return ok;
+        return palavraPronta;
     }
 
     

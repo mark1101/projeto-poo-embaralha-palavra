@@ -175,7 +175,7 @@ public class Tela extends javax.swing.JFrame {
             {
                 System.out.println("global = 0 ");
                 mostra = inverte.toString();
-                this.jTextFieldEmbaralhada.setText(mostra);
+                this.jTextFieldEmbaralhada.setText("dadsdsdsd");
             }
             if (global == 1)
             {
