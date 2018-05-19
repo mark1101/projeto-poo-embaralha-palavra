@@ -13,8 +13,8 @@ public class Main {
     public static void main(String[] args) {
         String palavra = ConjuntoPalavras.EscolhaPalavra(0);
         Jogo jogo = EscolheMetodo.Escolhe(1);
-        String novaPalavra = jogo.Muda(palavra);
 
+        String novaPalavra = jogo.Muda(palavra);
         System.out.println(novaPalavra);
     }
 }
