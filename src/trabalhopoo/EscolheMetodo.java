@@ -23,7 +23,8 @@ public class EscolheMetodo {
         BaguncaPar bagunca = new BaguncaPar();
 
         Tela telaPassaNum = new Tela();
-        telaPassaNum.Num(num);
+        telaPassaNum.Num(num);  // passa numero para variavel global na main
+        
         
         if (num == 0) {
             System.out.println("111");

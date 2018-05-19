@@ -60,6 +60,7 @@ public class Tela extends javax.swing.JFrame {
 
         jButtonTroca.setText("TROCAR PALAVRA");
 
+        jTextFieldEmbaralhada.setEditable(false);
         jTextFieldEmbaralhada.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextFieldEmbaralhadaActionPerformed(evt);
@@ -84,39 +85,39 @@ public class Tela extends javax.swing.JFrame {
         jDesktopPane1.setLayout(jDesktopPane1Layout);
         jDesktopPane1Layout.setHorizontalGroup(
             jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jDesktopPane1Layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(jButtonTeste)
-                .addGap(234, 234, 234))
             .addGroup(jDesktopPane1Layout.createSequentialGroup()
                 .addGap(21, 21, 21)
                 .addGroup(jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jButtonInicia)
-                    .addGroup(jDesktopPane1Layout.createSequentialGroup()
-                        .addComponent(jButtonTroca)
-                        .addGap(75, 75, 75)
-                        .addGroup(jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jTextFieldEmbaralhada, javax.swing.GroupLayout.PREFERRED_SIZE, 273, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jDesktopPane1Layout.createSequentialGroup()
-                                .addComponent(jTextFieldTeste, javax.swing.GroupLayout.PREFERRED_SIZE, 208, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(37, 37, 37)))))
-                .addContainerGap(128, Short.MAX_VALUE))
+                    .addComponent(jButtonTroca))
+                .addGap(77, 77, 77)
+                .addGroup(jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jTextFieldTeste, javax.swing.GroupLayout.DEFAULT_SIZE, 273, Short.MAX_VALUE)
+                    .addComponent(jTextFieldEmbaralhada))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jDesktopPane1Layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(jButtonTeste)
+                .addGap(234, 234, 234))
         );
         jDesktopPane1Layout.setVerticalGroup(
             jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jDesktopPane1Layout.createSequentialGroup()
-                .addGap(26, 26, 26)
-                .addComponent(jButtonInicia)
-                .addGap(18, 18, 18)
-                .addComponent(jTextFieldEmbaralhada, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGroup(jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jDesktopPane1Layout.createSequentialGroup()
-                        .addGap(40, 40, 40)
-                        .addComponent(jTextFieldTeste, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(26, 26, 26)
+                        .addComponent(jButtonInicia))
                     .addGroup(jDesktopPane1Layout.createSequentialGroup()
-                        .addGap(22, 22, 22)
-                        .addComponent(jButtonTroca)))
-                .addGap(66, 66, 66)
+                        .addGap(37, 37, 37)
+                        .addComponent(jTextFieldEmbaralhada, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(35, 35, 35)
+                .addGroup(jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addGroup(jDesktopPane1Layout.createSequentialGroup()
+                        .addComponent(jButtonTroca)
+                        .addGap(81, 81, 81))
+                    .addGroup(jDesktopPane1Layout.createSequentialGroup()
+                        .addComponent(jTextFieldTeste)
+                        .addGap(66, 66, 66)))
                 .addComponent(jButtonTeste)
                 .addContainerGap(83, Short.MAX_VALUE))
         );
@@ -128,7 +129,7 @@ public class Tela extends javax.swing.JFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(199, 199, 199)
                 .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 208, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(213, Short.MAX_VALUE))
             .addComponent(jDesktopPane1)
         );
         jPanel1Layout.setVerticalGroup(
@@ -164,11 +165,26 @@ public class Tela extends javax.swing.JFrame {
 
     private void jButtonIniciaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonIniciaActionPerformed
         String mostra = "";
+        char lista;
         
             Inverte inverte = new Inverte();
             EmbaralhaLista embaralha = new EmbaralhaLista();
             BaguncaPar bagunca = new BaguncaPar();
             
+            if(global == 0)
+            {
+                mostra = inverte.toString();
+                this.jTextFieldEmbaralhada.setText(mostra);
+            }
+            if (global == 1)
+            {
+                
+            }
+            if (global == 2)
+            {
+                mostra = bagunca.toString();
+                this.jTextFieldEmbaralhada.setText(mostra);
+            }
         
     }//GEN-LAST:event_jButtonIniciaActionPerformed
 
