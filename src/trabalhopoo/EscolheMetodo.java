@@ -28,9 +28,9 @@ public class EscolheMetodo {
         }
         if (num == 1) {
             System.out.println("2222");
-            lista.Muda(palavra);
+            lista.Muda(palavra); //// 
             System.out.println(lista.toString());
-
+            
         }
         if (num == 2) {
             System.out.println("3333");

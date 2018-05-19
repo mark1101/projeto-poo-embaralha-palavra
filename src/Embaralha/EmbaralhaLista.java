@@ -41,9 +41,11 @@ public class EmbaralhaLista implements Jogo {
         System.out.println("lista");
 
     }
-
-    public String getPalavra() {
-        return "saida " + palavraa;
+    @Override
+    public String toString() {
+        return "EmbaralhaLista{" + "palavraa=" + palavraa + '}';
     }
+
+   
 
 }
