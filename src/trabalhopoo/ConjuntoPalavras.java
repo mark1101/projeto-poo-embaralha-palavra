@@ -16,8 +16,10 @@ import java.util.Random;
 public class ConjuntoPalavras {
     private String[] palavra = {"abacate", "jogador", "calopsita", "brasileiro",
             "prateleira", "liquidificador", "salgadinho", "atendimento", "melancia", "especial"};
-
+    EscolheMetodo escolhe = new EscolheMetodo();
+    
     public String EscolhaPalavra(int numero) {
+        escolhe.Escolhe(palavra[numero]);
         return palavra[numero];
     }
     

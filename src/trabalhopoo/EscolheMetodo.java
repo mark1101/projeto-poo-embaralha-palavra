@@ -27,20 +27,20 @@ public class EscolheMetodo {
         
         
         if (num == 0) {
-            System.out.println("111");
+            //System.out.println("111");
             inverte.Muda(palavra);
-            System.out.println(inverte.toString());
+           // System.out.println(inverte.toString());
         }
         if (num == 1) {
-            System.out.println("2222");
+            //System.out.println("2222");
             lista.Muda(palavra); //// 
-            System.out.println(lista.getPalavra());
+            //System.out.println(lista.getPalavra());
             
         }
         if (num == 2) {
-            System.out.println("3333");
+           // System.out.println("3333");
             bagunca.Muda(palavra);
-            System.out.println(bagunca.toString());
+           // System.out.println(bagunca.toString());
             
         }
 

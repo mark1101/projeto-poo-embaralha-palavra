@@ -21,6 +21,7 @@ public class Main {
         
         Tela tela = new Tela();
         tela.setVisible(true);
+        
         List<Integer> lista = new ArrayList<Integer>();
 
         for (int i = 0; i < 10; i++) {
