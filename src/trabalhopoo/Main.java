@@ -8,13 +8,20 @@ package trabalhopoo;
 import Embaralha.BaguncaPar;
 import Embaralha.EmbaralhaLista;
 import Embaralha.Inverte;
+import View.Tela;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
 public class Main {
-
+   
+    public static int globlal;
+    
     public static void main(String[] args) {
+        
+        Tela tela = new Tela();
+        tela.setVisible(true);
+        
         List<Integer> lista = new ArrayList<Integer>();
 
         for (int i = 0; i < 10; i++) {

@@ -8,6 +8,7 @@ package trabalhopoo;
 import Embaralha.BaguncaPar;
 import Embaralha.EmbaralhaLista;
 import Embaralha.Inverte;
+import View.Tela;
 import java.util.Random;
 
 public class EscolheMetodo {
@@ -21,21 +22,25 @@ public class EscolheMetodo {
         EmbaralhaLista lista = new EmbaralhaLista();
         BaguncaPar bagunca = new BaguncaPar();
 
+        Tela telaPassaNum = new Tela();
+        telaPassaNum.Num(num);  // passa numero para variavel global na main
+        
+        
         if (num == 0) {
-            System.out.println("111");
+            //System.out.println("111");
             inverte.Muda(palavra);
-            System.out.println(inverte.toString());
+           // System.out.println(inverte.toString());
         }
         if (num == 1) {
-            System.out.println("2222");
+            //System.out.println("2222");
             lista.Muda(palavra); //// 
-            System.out.println(lista.toString());
+            //System.out.println(lista.getPalavra());
             
         }
         if (num == 2) {
-            System.out.println("3333");
+           // System.out.println("3333");
             bagunca.Muda(palavra);
-            System.out.println(bagunca.toString());
+           // System.out.println(bagunca.toString());
             
         }
 

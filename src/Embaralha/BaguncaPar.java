@@ -39,7 +39,7 @@ public class BaguncaPar implements Jogo {
 
     @Override
     public String toString() {
-        return "BaguncaPar{" + "ok=" + ok + '}';
+        return ok;
     }
 
     

@@ -21,7 +21,7 @@ public class Inverte implements Jogo {
     }
     @Override
     public String toString() {
-        return "Inverte{" + "saida=" + saida + '}';
+        return saida;
     }
 
     
