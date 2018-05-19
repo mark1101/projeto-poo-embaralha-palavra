@@ -16,7 +16,7 @@ public class EmbaralhaLista implements Jogo {
 
     public static char[] palavraa;
     String palavraNova = "";
-    
+
     @Override
     public void Muda(String palavra) {
 
@@ -35,16 +35,14 @@ public class EmbaralhaLista implements Jogo {
             palavraNova += lista.get(i);
 
         }
-        
-        
+
         System.out.println(palavraNova);
         System.out.println("lista ");
 
     }
+
     public String getPalavra() {
         return palavraNova;
     }
-
-   
 
 }
