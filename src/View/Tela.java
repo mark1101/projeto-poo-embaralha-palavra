@@ -165,7 +165,7 @@ public class Tela extends javax.swing.JFrame {
 
     private void jButtonIniciaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonIniciaActionPerformed
         String mostra = "";
-        char lista;
+        char[] lista;
         
             Inverte inverte = new Inverte();
             EmbaralhaLista embaralha = new EmbaralhaLista();
@@ -174,15 +174,14 @@ public class Tela extends javax.swing.JFrame {
             if(global == 0)
             {
                 System.out.println("global = 0 ");
-               
                 System.out.println(mostra);
                 this.jTextFieldEmbaralhada.setText(inverte.getPalavra());
             }
             if (global == 1)
             {
                 System.out.println("global 1");
-                mostra = embaralha.toString();
-                jTextFieldEmbaralhada.setText(mostra.intern());
+
+                jTextFieldEmbaralhada.setText("cxcx");
             }
             if (global == 2)
             {
