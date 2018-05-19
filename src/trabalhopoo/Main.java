@@ -13,8 +13,12 @@ import java.util.Collections;
 import java.util.List;
 
 public class Main {
-
+   
+    public static int globlal;
+    
     public static void main(String[] args) {
+        
+        
         List<Integer> lista = new ArrayList<Integer>();
 
         for (int i = 0; i < 10; i++) {
