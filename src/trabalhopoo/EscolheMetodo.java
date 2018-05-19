@@ -16,4 +16,10 @@ public class EscolheMetodo {
     public static Jogo Escolhe(int n) {
         return jogos[n];
     }
+
+    public static Jogo EscolheAleatorio(){
+        Random rand = new Random();
+
+        return Escolhe(rand.nextInt(jogos.length));
+    }
 }
