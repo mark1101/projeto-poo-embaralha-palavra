@@ -10,7 +10,7 @@ public class BaguncaPar implements Jogo {
     private char primeira;
     String ok = "";
 
-    public void Muda(String palavra) {
+    public String Muda(String palavra) {
 
         this.palavra = palavra;
         int tamanho = palavra.length();
@@ -34,6 +34,8 @@ public class BaguncaPar implements Jogo {
         ok = palavraPronta;
         System.out.println(ok);
         System.out.println("bagunca");
+
+        return "baguncapar";
 
     }
 

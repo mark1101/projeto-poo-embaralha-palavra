@@ -1,29 +1,20 @@
-/*
+package trabalhopoo;/*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package trabalhopoo;
 
-import Embaralha.BaguncaPar;
-import Embaralha.EmbaralhaLista;
-import Embaralha.Inverte;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
+
+import trabalhopoo.ConjuntoPalavras;
+import trabalhopoo.EscolheMetodo;
 
 public class Main {
 
     public static void main(String[] args) {
-        List<Integer> lista = new ArrayList<Integer>();
+        String palavra = ConjuntoPalavras.EscolhaPalavra(0);
+        Jogo jogo = EscolheMetodo.Escolhe(1);
+        String novaPalavra = jogo.Muda(palavra);
 
-        for (int i = 0; i < 10; i++) {
-            lista.add(i);       // adiciona numeros a minha lista
-        }
-        Collections.shuffle(lista); // bagunca lista 
-
-        ConjuntoPalavras escolha = new ConjuntoPalavras();
-        escolha.EscolhaPalavra(lista.get(0)); // passa o valor da posicao 0 da lista 
-
+        System.out.println(novaPalavra);
     }
 }

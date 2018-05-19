@@ -12,12 +12,14 @@ public class Inverte implements Jogo {
 
     String saida = "";
 
-    public void Muda(String palavra) {
+    public String Muda(String palavra) {
         for (int i = palavra.length() - 1; i >= 0; i--) {
             saida = saida + palavra.charAt(i);
         }
         System.out.println(saida);
         System.out.println("inverte");
+
+        return "inverte";
     }
     @Override
     public String toString() {

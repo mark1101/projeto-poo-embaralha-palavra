@@ -14,11 +14,11 @@ import Embaralha.Inverte;
 import java.util.Random;
 
 public class ConjuntoPalavras {
-    private String[] palavra = {"abacate", "jogador", "calopsita", "brasileiro",
+    private static String[] palavra = {"abacate", "jogador", "calopsita", "brasileiro",
             "prateleira", "liquidificador", "salgadinho", "atendimento", "melancia", "especial"};
 
-    public String EscolhaPalavra(int numero) {
+    public static String EscolhaPalavra(int numero) {
         return palavra[numero];
     }
-    
+
 }

@@ -11,33 +11,9 @@ import Embaralha.Inverte;
 import java.util.Random;
 
 public class EscolheMetodo {
+    private static Jogo[] jogos = {new Inverte(), new EmbaralhaLista(), new BaguncaPar()};
 
-    public void Escolhe(String palavra) {
-        Random rand = new Random();
-
-        int num = rand.nextInt(3);
-        System.out.println("nume : " + num);
-        Inverte inverte = new Inverte();
-        EmbaralhaLista lista = new EmbaralhaLista();
-        BaguncaPar bagunca = new BaguncaPar();
-
-        if (num == 0) {
-            System.out.println("111");
-            inverte.Muda(palavra);
-            System.out.println(inverte.toString());
-        }
-        if (num == 1) {
-            System.out.println("2222");
-            lista.Muda(palavra); //// 
-            System.out.println(lista.toString());
-            
-        }
-        if (num == 2) {
-            System.out.println("3333");
-            bagunca.Muda(palavra);
-            System.out.println(bagunca.toString());
-            
-        }
-
+    public static Jogo Escolhe(int n) {
+        return jogos[n];
     }
 }

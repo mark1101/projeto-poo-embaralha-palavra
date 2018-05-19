@@ -17,28 +17,23 @@ public class EmbaralhaLista implements Jogo {
     char[] palavraa;
 
     @Override
-    public void Muda(String palavra) {
+    public String Muda(String palavra) {
 
         ArrayList<Character> lista = new ArrayList();
+        String novaPalavra = "";
 
-        char[] vetorchar = palavra.toCharArray();
-
-        for (int i = 0; i < vetorchar.length; i++) {
-            lista.add(i, palavra.charAt(i));
+        for (char c: palavra.toCharArray()) {
+            lista.add(c);
         }
+
         Collections.shuffle(lista);
         //System.out.println(lista.toString());
 
-        char[] novaPalavra = new char[lista.size()];
-
-        for (int i = 0; i < novaPalavra.length; i++) {
-            novaPalavra[i] = lista.get(i);
-
+        for(int x = 0; x < lista.size(); x++){
+            novaPalavra += lista.get(x);
         }
 
-        palavraa = novaPalavra;
-        System.out.println(palavraa);
-        System.out.println("lista");
+        return novaPalavra;
 
     }
     @Override
