@@ -40,7 +40,7 @@
       <file leaf-file-name="EmbaralhaLista.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Embaralha/EmbaralhaLista.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
+            <state relative-caret-position="102">
               <caret line="19" column="17" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
             </state>
           </provider>
@@ -254,7 +254,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1526706312114</updated>
-      <workItem from="1526706320621" duration="2394000" />
+      <workItem from="1526706320621" duration="2713000" />
     </task>
     <task id="LOCAL-00001" summary="sdsds">
       <created>1526708498616</created>
@@ -274,11 +274,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="307000" />
+    <option name="totallyTimeSpent" value="626000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -374,7 +373,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Embaralha/EmbaralhaLista.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="102">
           <caret line="19" column="17" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
         </state>
       </provider>
