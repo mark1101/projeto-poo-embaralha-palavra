@@ -31,11 +31,8 @@ public class BaguncaPar implements Jogo {
             i++;
         }
         
-        ok = palavraPronta;
-        System.out.println(ok);
-        System.out.println("bagunca");
-
-        return "baguncapar";
+        
+        return palavraPronta;
 
     }
 

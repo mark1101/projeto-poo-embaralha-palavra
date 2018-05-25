@@ -12,8 +12,8 @@ import trabalhopoo.EscolheMetodo;
 public class Main {
 
     public static void main(String[] args) {
-        String palavra = ConjuntoPalavras.EscolhaPalavra(0);
-        Jogo jogo = EscolheMetodo.Escolhe(0);
+        String palavra = ConjuntoPalavras.EscolhaPalavra(8);
+        Jogo jogo = EscolheMetodo.Escolhe(2);
         
         String novaPalavra = jogo.Muda(palavra);
         System.out.println(novaPalavra);

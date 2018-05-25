@@ -15,6 +15,7 @@ import trabalhopoo.Jogo;
 public class EmbaralhaLista implements Jogo {
 
     char[] palavraa;
+    String pronta;
 
     @Override
     public String Muda(String palavra) {
@@ -32,13 +33,15 @@ public class EmbaralhaLista implements Jogo {
         for(int x = 0; x < lista.size(); x++){
             novaPalavra += lista.get(x);
         }
-
+         for(int x = 0; x < lista.size(); x++){
+            pronta += lista.get(x);
+        }
         return novaPalavra;
 
     }
-    @Override
-    public String toString() {
-        return "EmbaralhaLista{" + "palavraa=" + palavraa + '}';
+   
+    public String getPalavra() {
+        return pronta;
     }
 
    
