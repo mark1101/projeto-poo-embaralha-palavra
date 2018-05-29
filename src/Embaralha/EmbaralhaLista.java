@@ -12,9 +12,6 @@ import trabalhopoo.Modificador;
 
 public class EmbaralhaLista implements Modificador {
 
-    char[] palavraa;
-    String pronta;
-
     @Override
     public String Muda(String palavra) {
 
@@ -31,17 +28,8 @@ public class EmbaralhaLista implements Modificador {
         for(int x = 0; x < lista.size(); x++){
             novaPalavra += lista.get(x);
         }
-         for(int x = 0; x < lista.size(); x++){
-            pronta += lista.get(x);
-        }
+
         return novaPalavra;
 
     }
-   
-    public String getPalavra() {
-        return pronta;
-    }
-
-   
-
 }
