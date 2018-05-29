@@ -10,6 +10,7 @@ public class BaguncaPar implements Modificador {
     String ok = "";
 
     public String Muda(String palavra) {
+        
         String palavraPronta = "";
         this.palavra = palavra;
         int tamanho = palavra.length();
