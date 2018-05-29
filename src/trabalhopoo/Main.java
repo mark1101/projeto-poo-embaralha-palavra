@@ -12,6 +12,7 @@ public class Main {
         Modificador modificador = InventaModificador.Escolhe(1);
 
         String novaPalavra = modificador.Muda(palavra);
+
         System.out.println(novaPalavra);
     }
 }

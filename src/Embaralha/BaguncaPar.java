@@ -29,20 +29,13 @@ public class BaguncaPar implements Modificador {
             }
             i++;
         }
-        
-        ok = palavraPronta;
-        System.out.println(ok);
-        System.out.println("bagunca");
 
-        return "baguncapar";
+        return palavraPronta;
 
     }
 
-    @Override
-    public String toString() {
-        return "BaguncaPar{" + "ok=" + ok + '}';
+    public String getPalavra() {
+        return palavraPronta;
     }
-
-    
 
 }
