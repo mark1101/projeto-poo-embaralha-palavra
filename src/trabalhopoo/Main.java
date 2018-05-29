@@ -5,16 +5,13 @@ package trabalhopoo;/*
  */
 
 
-import trabalhopoo.ConjuntoPalavras;
-import trabalhopoo.EscolheMetodo;
-
 public class Main {
 
     public static void main(String[] args) {
         String palavra = ConjuntoPalavras.EscolhaPalavra(0);
-        Jogo jogo = EscolheMetodo.Escolhe(1);
+        Modificador modificador = InventaModificador.Escolhe(1);
 
-        String novaPalavra = jogo.Muda(palavra);
+        String novaPalavra = modificador.Muda(palavra);
         System.out.println(novaPalavra);
     }
 }

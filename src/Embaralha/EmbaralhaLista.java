@@ -7,12 +7,10 @@ package Embaralha;
 
 import java.util.ArrayList;
 import java.util.Collections;
-import static java.util.Collections.list;
-import java.util.List;
-import java.util.Random;
-import trabalhopoo.Jogo;
 
-public class EmbaralhaLista implements Jogo {
+import trabalhopoo.Modificador;
+
+public class EmbaralhaLista implements Modificador {
 
     char[] palavraa;
 

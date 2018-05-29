@@ -10,16 +10,16 @@ import Embaralha.EmbaralhaLista;
 import Embaralha.Inverte;
 import java.util.Random;
 
-public class EscolheMetodo {
-    private static Jogo[] jogos = {new Inverte(), new EmbaralhaLista(), new BaguncaPar()};
+public class InventaModificador {
+    private static Modificador[] modificadors = {new Inverte(), new EmbaralhaLista(), new BaguncaPar()};
 
-    public static Jogo Escolhe(int n) {
-        return jogos[n];
+    public static Modificador Escolhe(int n) {
+        return modificadors[n];
     }
 
-    public static Jogo EscolheAleatorio(){
+    public static Modificador EscolheAleatorio(){
         Random rand = new Random();
 
-        return Escolhe(rand.nextInt(jogos.length));
+        return Escolhe(rand.nextInt(modificadors.length));
     }
 }

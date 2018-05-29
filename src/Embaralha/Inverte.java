@@ -5,10 +5,9 @@
  */
 package Embaralha;
 
-import java.util.ArrayList;
-import trabalhopoo.Jogo;
+import trabalhopoo.Modificador;
 
-public class Inverte implements Jogo {
+public class Inverte implements Modificador {
 
     String saida = "";
 

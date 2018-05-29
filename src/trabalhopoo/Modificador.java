@@ -5,7 +5,7 @@ package trabalhopoo;
 
 
 
-public interface Jogo {
+public interface Modificador {
     
     public String Muda(String palavra);
     

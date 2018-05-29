@@ -1,9 +1,8 @@
 package Embaralha;
 
-import java.util.ArrayList;
-import trabalhopoo.Jogo;
+import trabalhopoo.Modificador;
 
-public class BaguncaPar implements Jogo {
+public class BaguncaPar implements Modificador {
 
     private String palavra;
     String palavraPronta = "";
