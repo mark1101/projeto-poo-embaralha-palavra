@@ -30,17 +30,13 @@ public class BaguncaPar implements Jogo {
             }
             i++;
         }
-        
-        
+
         return palavraPronta;
 
     }
 
-    @Override
-    public String toString() {
-        return "BaguncaPar{" + "ok=" + ok + '}';
+    public String getPalavra() {
+        return palavraPronta;
     }
-
-    
 
 }
