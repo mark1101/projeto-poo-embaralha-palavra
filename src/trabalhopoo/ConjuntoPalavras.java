@@ -21,4 +21,10 @@ public class ConjuntoPalavras {
         return palavra[numero];
     }
 
+    public static String escolhePalavraAleatoria(){
+        Random rand = new Random();
+
+        return EscolhaPalavra(rand.nextInt(palavra.length));
+    }
+
 }
