@@ -23,7 +23,6 @@ public class EmbaralhaLista implements Modificador {
         }
 
         Collections.shuffle(lista);
-        //System.out.println(lista.toString());
 
         for(int x = 0; x < lista.size(); x++){
             novaPalavra += lista.get(x);

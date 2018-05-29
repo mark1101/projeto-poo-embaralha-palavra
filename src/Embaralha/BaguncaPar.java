@@ -5,12 +5,12 @@ import trabalhopoo.Modificador;
 public class BaguncaPar implements Modificador {
 
     private String palavra;
-    String palavraPronta = "";
+
     private char primeira;
     String ok = "";
 
     public String Muda(String palavra) {
-
+        String palavraPronta = "";
         this.palavra = palavra;
         int tamanho = palavra.length();
 
@@ -33,9 +33,4 @@ public class BaguncaPar implements Modificador {
         return palavraPronta;
 
     }
-
-    public String getPalavra() {
-        return palavraPronta;
-    }
-
 }
